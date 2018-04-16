@@ -95,7 +95,7 @@ public void Detener(View v){ //DETENER TIMER
                 //db.add(sydney);
                 if (db.contains(sydney)==false){
                     db.add(sydney);
-                    mMap.addMarker(new MarkerOptions().position(sydney).title("Marker "+counter++));
+                    mMap.addMarker(new MarkerOptions().position(sydney).title("Marker map "+counter++));
                     mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
                 }else {
                     System.out.println("Existe: " + db.contains(sydney));
